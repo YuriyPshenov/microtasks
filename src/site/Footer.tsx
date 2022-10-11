@@ -1,9 +1,9 @@
 type FooterPropsType = {
-    title: string
+    titleForFooter: string
 }
 
 export const Footer = (props: FooterPropsType) => {
     return (
-        <div>{props.title}</div>
+        <div>{props.titleForFooter}</div>
     )
 }

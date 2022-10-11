@@ -1,9 +1,9 @@
 type HeaderPropsType = {
-    title: string
+    titleForHeader: string
 }
 
 export const Header = (props: HeaderPropsType) => {
     return (
-        <div>{props.title}</div>
+        <div>{props.titleForHeader}</div>
     )
 }
