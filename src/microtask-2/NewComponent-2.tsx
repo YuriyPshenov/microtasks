@@ -9,23 +9,23 @@ type topCarsPropsType = {
     model: string
 }
 
-
 export const NewComponent2 = (props: topCarsType) => {
     return (
-        <ol>
-            <table>
+        <table>
                 {props.topCars.map((topCarsNum, index) => {
                     return (
-                        <li key={index}>
-                            <tr>
-                                <td>{topCarsNum.manufacturer}</td>
-                                <td>{topCarsNum.model}</td>
-                            </tr>
-                        </li>
+                        <tr key={index}>
+                            <td>{index}</td>
+                            <td>
+                                {topCarsNum.manufacturer}
+                            </td>
+                            <td>
+                                {topCarsNum.model}
+                            </td>
+                        </tr>
                     )
-                })
-                }
-            </table>
-        </ol>
+                })}
+        </table>
     )
 }
+

@@ -36,10 +36,10 @@ function App() {
 
     return (
         <>
-            {/*<Header titleForHeader={'NewHeader'}/>*/}
-            {/*<Body titleForBody={'NewBody'}/>*/}
-            {/*<Footer titleForFooter={'NewFooter'}/>*/}
-            {/*<NewComponent students={students}/>*/}
+            <Header titleForHeader={'NewHeader'}/>
+            <Body titleForBody={'NewBody'}/>
+            <Footer titleForFooter={'NewFooter'}/>
+            <NewComponent students={students}/>
             <NewComponent2 topCars={topCars1} />
         </>
     );
