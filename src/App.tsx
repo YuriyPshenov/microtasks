@@ -6,15 +6,20 @@ import {Footer} from "./microtask-1/Footer";
 import {NewComponent} from "./microtask-2/NewComponent";
 import {NewComponent2} from "./microtask-2/NewComponent-2";
 import {Button} from "./microtask-3/Button";
-
-
+import {Header1} from "./microtask-4/microtask-4";
+import {Money} from "./microtask-5/microtask-4";
 
 function App() {
+
+    // microtask-1
+
     let students = [
         {id: 0, name: 'James', age: 48},
         {id: 1, name: 'Robert', age: 31},
         {id: 3, name: 'John', age: 24},
     ];
+
+    // microtask-2
 
     const topCars1 = [
         {manufacturer: 'BMW', model: 'm5cs'},
@@ -48,14 +53,24 @@ function App() {
 
     return (
         <div className='App-Wrapper'>
+            <h1>Microtasks</h1>
+            <h2>Microtask-1</h2>
             <Header titleForHeader={'NewHeader'}/>
             <Body titleForBody={'NewBody'}/>
             <Footer titleForFooter={'NewFooter'}/>
+            <h2>Microtask-2</h2>
             <NewComponent students={students}/>
-            <NewComponent2 topCars={topCars1} />
-            <Button name={'MyYoutubeChanel-1'} callback={() => Button1Foo('Im vadim', 21, 'live in minsk')}/>
-            <Button name={'MyYoutubeChanel-2'} callback={() => Button2Foo('Im gosha')}/>
-            <Button name={'Im stupid button'} callback={Button3Foo}/>
+            <NewComponent2 topCars={topCars1}/>
+            <h2>Microtask-3</h2>
+            <div>
+                <Button name={'MyYoutubeChanel-1'} callback={() => Button1Foo('Im vadim', 21, 'live in minsk')}/>
+                <Button name={'MyYoutubeChanel-2'} callback={() => Button2Foo('Im gosha')}/>
+                <Button name={'Im stupid button'} callback={Button3Foo}/>
+            </div>
+            <h2>Microtask-4</h2>
+            <Header1/>
+            <h2>Microtask-5</h2>
+            <Money/>
         </div>
     );
 }
