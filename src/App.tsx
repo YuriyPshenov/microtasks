@@ -8,6 +8,7 @@ import {NewComponent2} from "./microtask-2/NewComponent-2";
 import {Button} from "./microtask-3/Button";
 import {Header1} from "./microtask-4/microtask-4";
 import {Money} from "./microtask-5/microtask-4";
+import {Input} from "./microtask-6/Microtask-6";
 
 function App() {
 
@@ -71,6 +72,8 @@ function App() {
             <Header1/>
             <h2>Microtask-5</h2>
             <Money/>
+            <h2>Microtask-6</h2>
+            <Input/>
         </div>
     );
 }

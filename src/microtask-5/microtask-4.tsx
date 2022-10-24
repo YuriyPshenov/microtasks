@@ -17,7 +17,6 @@ export const Money = () => {
 
     let[filter, setFilter]=useState<FilterType>('All')
 
-
     let currentMoney = money;
 
     if (filter === 'Dollars') {
