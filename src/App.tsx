@@ -6,6 +6,7 @@ import {Footer} from "./site/Footer";
 import NewComponent from "./microtask2/NewComponent";
 import {Microtask3} from "./microtask3/Microtask3";
 import Microtask4 from "./microtask4/Microtask4";
+import Microtask5 from "./microtask5/Microtask5";
 
 function App() {
 
@@ -42,6 +43,10 @@ function App() {
             <div>
                 <h2>Microtask-4</h2>
                 <Microtask4/>
+            </div>
+            <div>
+                <h2>Microtask-5</h2>
+                <Microtask5/>
             </div>
         </div>
     );

@@ -12,8 +12,6 @@ const Microtask4 = () => {
         setA(0)
     }
 
-    console.log(a)
-
     return (
         <div>
             <h1>{a}</h1>
