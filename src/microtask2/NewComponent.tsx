@@ -46,8 +46,8 @@ const NewComponent = (props: NewComponentPropsType) => {
                     </tr>
                     </thead>
                     <tbody>
-                    {topCars.map((c, index) => <tr>
-                        <td>{index}</td>
+                    {topCars.map((c, index) => <tr key={index}>
+                        <td>{index + 1}</td>
                         <td>{c.manufacturer}</td>
                         <td>{c.model}</td>
                     </tr>)}
