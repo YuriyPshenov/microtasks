@@ -7,6 +7,8 @@ import NewComponent from "./microtask2/NewComponent";
 import {Microtask3} from "./microtask3/Microtask3";
 import Microtask4 from "./microtask4/Microtask4";
 import Microtask5 from "./microtask5/Microtask5";
+import Microtask61 from "./microtask6/Microtask6-1";
+import Microtask62 from "./microtask6/Microtask6-2";
 
 function App() {
 
@@ -32,21 +34,35 @@ function App() {
                 <Body titleForBody="New Body"/>
                 <Footer titleForFooter="New Footer"/>
             </div>
+            <hr/>
             <div>
                 <h2>Microtask-2</h2>
                 <NewComponent students={students}/>
             </div>
+            <hr/>
             <div>
                 <h2>Microtask-3</h2>
                 <Microtask3/>
             </div>
+            <hr/>
             <div>
                 <h2>Microtask-4</h2>
                 <Microtask4/>
             </div>
+            <hr/>
             <div>
                 <h2>Microtask-5</h2>
                 <Microtask5/>
+            </div>
+            <hr/>
+            <div>
+                <h2>Microtask-6-1</h2>
+                <Microtask61/>
+            </div>
+            <hr/>
+            <div>
+                <h2>Microtask-6-2</h2>
+                <Microtask62/>
             </div>
         </div>
     );
